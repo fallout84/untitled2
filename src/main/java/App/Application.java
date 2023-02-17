@@ -2,6 +2,7 @@ package App;
 
 import io.github.humbleui.jwm.*;
 
+import java.io.File;
 import java.util.function.Consumer;
 
 public class Application implements Consumer<Event> {
