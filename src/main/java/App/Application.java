@@ -18,6 +18,11 @@ public class Application implements Consumer<Event> {
         window.setTitle("Java 2D");
         window.setWindowSize(900, 900);
         window.setWindowPosition(100, 100);
+        // задаём иконку
+        switch (Platform.CURRENT) {
+            case WINDOWS -> window.setIcon(new File("src/main/resources/windows.ico"));
+            case MACOS -> window.setIcon(new File("src/main/resources/macos.icns"));
+        }
         window.setVisible(true);
         /**
          *
